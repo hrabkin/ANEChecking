@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+							xmlns:s="library://ns.adobe.com/flex/spark"
+							firstView="views.FeaturesPrototypingHomeView"
+							creationComplete="init()"
+							applicationDPI="160">
+
+	<fx:Style source="main.css" />
+	
+	<fx:Script>
+		<![CDATA[
+			
+			// import net.ane.speechrecognition.SpeechRecognitionController;
+			// private var controllerSRecognition:SpeechRecognitionController;
+			import mx.events.FlexEvent;
+			
+			protected function creationCompleteHandler(event:FlexEvent):void {
+				
+			}
+		]]>
+	</fx:Script>		
+		
+	
+</s:ViewNavigatorApplication>

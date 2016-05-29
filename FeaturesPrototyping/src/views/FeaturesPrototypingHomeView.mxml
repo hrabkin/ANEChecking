@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="Home">
+	
+	<s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="center">       
+		<s:Label text="Welcome to a Features Lab !!"/>
+		<s:Button label="Speech recognition" click="navigator.pushView(FeatureSpeechRecognition)" styleName="next"/>
+		<s:Button label="GEO-Location" click="navigator.pushView(FeatureLocation)" styleName="next"/>
+		<s:Button label="Native Dialogs" click="navigator.pushView(FeatureDialogs)" styleName="next"/>
+		<s:Button label="Air Alert" click="navigator.pushView(FeatureAlerts)" styleName="next"/>
+	</s:VGroup>
+	
+</s:View>

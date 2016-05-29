@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="FeatureSpeechRecognition">
+	
+	<fx:Script>
+		<![CDATA[
+			protected function startSpeechRecognition():void {
+				
+			}
+		]]>
+	</fx:Script>
+	
+	<s:VGroup width="100%" height="100%" gap="15" verticalAlign="middle" horizontalAlign="center"> 
+		<s:Label text="Testing Nuance SDK feature" />
+		<s:Button label="Start recognition" click="startSpeechRecognition()" styleName="recognition" />
+		<s:Button label="Home" click="navigator.popView()" styleName="back" />
+	</s:VGroup>
+</s:View>
