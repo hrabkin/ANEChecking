@@ -17,7 +17,7 @@ public class InitFunction implements FREFunction {
 		ExtensionContext mExtContext = (ExtensionContext) extContext;
 
 		SpeechRecognizer recognizer = new NuanceRecognizer(mExtContext); 
-		mExtContext.setandroidnative(recognizer);
+		mExtContext.setSpeechRecognizer(recognizer);
 		
 		return null;
 	}

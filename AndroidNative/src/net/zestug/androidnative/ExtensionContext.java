@@ -13,6 +13,8 @@ public class ExtensionContext extends FREContext {
 		public static final String RECORDING_START = "RSTART";
 		public static final String RECOGNITION_INTERIM = "RINTERIM";
 		public static final String RECOGNITION_FINAL = "RFINAL";
+		public static final String GEOLOCATION_DONE = "GEODONE";
+		public static final String GEOLOCATION_FAILED = "GEOFAIL";
 	}
 	
 	public static final String TAG = "androidnative";
@@ -21,8 +23,11 @@ public class ExtensionContext extends FREContext {
 	
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
 		Log.d(TAG, "Context disposed");
+		if (speechRecognizer != null)
+			speechRecognizer.stopRecognition();
+		
+		
 	}
 
 	@Override
@@ -32,6 +37,7 @@ public class ExtensionContext extends FREContext {
 		
 		functions.put(InitFunction.KEY, new InitFunction());
 		functions.put(StartRecognitionFunction.KEY, new StartRecognitionFunction());
+		functions.put(GeoLocation.KEY, new GeoLocation());
 		
 		Log.d(TAG, "Context getFunctions()");
 		
