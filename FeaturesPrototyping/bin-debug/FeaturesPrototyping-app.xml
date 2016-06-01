@@ -9,8 +9,6 @@
   <initialWindow>
     <!-- The main SWF or HTML file of the application. Required. -->
     <!-- Note: In Flash Builder, the SWF reference is set automatically. -->
-    <content>FeaturesPrototyping.swf</content>
-    <title>AIR Features Lab</title>
     <!-- The type of system chrome to use (either "standard" or "none"). Optional. Default standard. -->
     <!-- <systemChrome></systemChrome> -->
     <!-- Whether the window is transparent. Only applicable when systemChrome is none. Optional. Default false. -->
@@ -21,8 +19,6 @@
     <!-- <minimizable></minimizable> -->
     <!-- Whether the user can maximize the window. Optional. Default true. -->
     <!-- <maximizable></maximizable> -->
-    <!-- Whether the user can resize the window. Optional. Default true. -->
-    <!-- <resizable></resizable> -->
     <!-- The window's initial width in pixels. Optional. -->
     <!-- <width></width> -->
     <!-- The window's initial height in pixels. Optional. -->
@@ -36,7 +32,7 @@
     <!-- The window's initial maximum size, specified as a width/height pair in pixels, such as "1600 1200". Optional. -->
     <!-- <maxSize></maxSize> -->
     <!-- The aspect ratio of the app ("portrait" or "landscape" or "any"). Optional. Mobile only. Default is the natural orientation of the device -->
-    <!-- <aspectRatio></aspectRatio> -->
+    <aspectRatio>any</aspectRatio>
     <!-- Whether the app will begin auto-orienting on launch. Optional. Mobile only. Default false -->
     <!-- <autoOrients></autoOrients> -->
     <!-- Whether the app launches in full screen. Optional. Mobile only. Default false -->
@@ -53,6 +49,7 @@
     <fullScreen>false</fullScreen>
     <visible>true</visible>
     <softKeyboardBehavior>none</softKeyboardBehavior>
+    <content>FeaturesPrototyping.swf</content>
   </initialWindow>
   <!-- We recommend omitting the supportedProfiles element, -->
   <!-- which in turn permits your application to be deployed to all -->
@@ -96,13 +93,6 @@
   <!-- <description></description> -->
   <!-- The MIME content type. -->
   <!-- <contentType></contentType> -->
-  <!-- The icon to display for the file type. Optional. -->
-  <!-- <icon>
-				<image16x16></image16x16>
-				<image32x32></image32x32>
-				<image48x48></image48x48>
-				<image128x128></image128x128>
-			</icon> -->
   <!-- </fileType> -->
   <!-- </fileTypes> -->
   <!-- iOS specific capabilities -->
@@ -171,23 +161,11 @@
   <android>
     <colorDepth>16bit</colorDepth>
     <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
-			    <!--See the Adobe AIR documentation for more information about setting Google Android permissions-->
-			    <!--Removing the permission android.permission.INTERNET will have the side effect
-					of preventing you from debugging your application on your device-->
 			    <uses-permission android:name="android.permission.INTERNET"/>
-			    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
-			    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
 			    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-			    <!--The DISABLE_KEYGUARD and WAKE_LOCK permissions should be toggled together
-					in order to access AIR's SystemIdleMode APIs-->
-			    <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
-			    <!--<uses-permission android:name="android.permission.WAKE_LOCK"/>-->
-			    <!--<uses-permission android:name="android.permission.CAMERA"/>-->
-			    <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
-			    <!--The ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE permissions should be toggled
-					together in order to use AIR's NetworkInfo APIs-->
-			    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-			    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+				<uses-permission android:name="android.permission.RECORD_AUDIO" />
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 			</manifest>]]></manifestAdditions>
   </android>
   <iPhone>
@@ -198,5 +176,8 @@
 			</array>]]></InfoAdditions>
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>
+  <extensions>
+    <extensionID>net.adobe.nativeextension</extensionID>
+  </extensions>
 </application>
 

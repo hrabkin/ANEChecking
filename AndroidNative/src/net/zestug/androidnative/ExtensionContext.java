@@ -100,7 +100,7 @@ public class ExtensionContext extends FREContext implements LocationListener {
 		public static final String RECORDING_START = "RSTART";
 		public static final String RECOGNITION_INTERIM = "RINTERIM";
 		public static final String RECOGNITION_FINAL = "RFINAL";
-		public static final String GEOLOCATION_DONE = "GEODONE";
-		public static final String GEOLOCATION_FAILED = "GEOFAIL";
+		public static final String GEOLOCATION_DONE = "GEO_DONE";
+		public static final String GEOLOCATION_FAILED = "GEO_FAIL";
 	}
 }

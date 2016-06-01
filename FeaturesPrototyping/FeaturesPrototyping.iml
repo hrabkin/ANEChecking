@@ -8,6 +8,9 @@
             <entry library-id="2dab4d52-24e2-4c8a-8f07-3696af2b87c9">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="4877c090-b47a-424f-97ab-322844a2ab12">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="4.15-air21" />
         </dependencies>
@@ -50,6 +53,16 @@
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="4877c090-b47a-424f-97ab-322844a2ab12" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../build/NativeFeatures.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>

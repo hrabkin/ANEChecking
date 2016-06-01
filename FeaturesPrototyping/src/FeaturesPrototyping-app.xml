@@ -11,8 +11,6 @@
 	<initialWindow>
 		<!-- The main SWF or HTML file of the application. Required. -->
 		<!-- Note: In Flash Builder, the SWF reference is set automatically. -->
-		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
-		<title>AIR Features Lab</title>
 		<!-- The type of system chrome to use (either "standard" or "none"). Optional. Default standard. -->
 		<!-- <systemChrome></systemChrome> -->
 		<!-- Whether the window is transparent. Only applicable when systemChrome is none. Optional. Default false. -->
@@ -23,8 +21,6 @@
 		<!-- <minimizable></minimizable> -->
 		<!-- Whether the user can maximize the window. Optional. Default true. -->
 		<!-- <maximizable></maximizable> -->
-		<!-- Whether the user can resize the window. Optional. Default true. -->
-		<!-- <resizable></resizable> -->
 		<!-- The window's initial width in pixels. Optional. -->
 		<!-- <width></width> -->
 		<!-- The window's initial height in pixels. Optional. -->
@@ -38,7 +34,7 @@
 		<!-- The window's initial maximum size, specified as a width/height pair in pixels, such as "1600 1200". Optional. -->
 		<!-- <maxSize></maxSize> -->
         <!-- The aspect ratio of the app ("portrait" or "landscape" or "any"). Optional. Mobile only. Default is the natural orientation of the device -->
-        <!-- <aspectRatio></aspectRatio> -->
+        <aspectRatio>any</aspectRatio>
         <!-- Whether the app will begin auto-orienting on launch. Optional. Mobile only. Default false -->
         <!-- <autoOrients></autoOrients> -->
         <!-- Whether the app launches in full screen. Optional. Mobile only. Default false -->
@@ -105,14 +101,6 @@
 			
 			<!-- The MIME content type. -->
 			<!-- <contentType></contentType> -->
-			
-			<!-- The icon to display for the file type. Optional. -->
-			<!-- <icon>
-				<image16x16></image16x16>
-				<image32x32></image32x32>
-				<image48x48></image48x48>
-				<image128x128></image128x128>
-			</icon> -->
 			
 		<!-- </fileType> -->
 	<!-- </fileTypes> -->
@@ -182,7 +170,7 @@
     <!-- </android> -->
 	<!-- End of the schema for adding the android specific tags in AndroidManifest.xml file -->
 
-<android>
+	<android>
         <colorDepth>16bit</colorDepth>
         <manifestAdditions><![CDATA[
 			<manifest android:installLocation="auto">
@@ -205,4 +193,8 @@
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
+
+	<extensions>
+		<extensionID>net.adobe.nativeextension</extensionID>
+	</extensions>
 </application>

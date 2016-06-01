@@ -4,9 +4,25 @@
 	
 	<fx:Script>
 		<![CDATA[
-			protected function startSpeechRecognition():void {
-				
-			}
+		import mx.core.FlexGlobals;
+
+		import net.adobe.nativeextension.events.RecognitionEvent;
+
+		protected function startSpeechRecognition():void {
+
+			FlexGlobals.topLevelApplication.featuresController.addEventListener(RecognitionEvent.RECOGNITION_INTERIM, onRecognitionInterim);
+			FlexGlobals.topLevelApplication.featuresController.addEventListener(RecognitionEvent.RECOGNITION_FINAL, onRecognitionFinal);
+		}
+
+		private function onRecognitionInterim(event:RecognitionEvent) {
+
+			r_interim.text = event.recognizedText;
+		}
+
+		private function onRecognitionFinal(event:RecognitionEvent) {
+
+			r_final.text = event.recognizedText;
+		}
 		]]>
 	</fx:Script>
 	
@@ -14,5 +30,14 @@
 		<s:Label text="Testing Nuance SDK feature" />
 		<s:Button label="Start recognition" click="startSpeechRecognition()" styleName="recognition" />
 		<s:Button label="Home" click="navigator.popView()" styleName="back" />
+
+		<s:HGroup verticalAlign="middle">
+			<s:Label text="Recognition Interim: "/>
+			<s:TextInput id="r_interim" width="320" text=""/>
+		</s:HGroup>
+		<s:HGroup verticalAlign="middle">
+			<s:Label text="Recognition Final: "/>
+			<s:TextInput id="r_final" width="320" text=""/>
+		</s:HGroup>
 	</s:VGroup>
 </s:View>

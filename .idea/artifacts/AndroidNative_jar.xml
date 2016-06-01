@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AndroidNative:jar">
+    <output-path>$PROJECT_DIR$/AndroidNative/bin</output-path>
+    <root id="archive" name="AndroidNative.jar">
+      <element id="module-output" name="AndroidNative" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/AndroidNative/lib/speechkit.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/AndroidNative/lib/support-v4-23.3.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

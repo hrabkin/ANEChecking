@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
 		xmlns:s="library://ns.adobe.com/flex/spark" title="Feature Location">
-	
-	<s:VGroup width="100%" height="100%" verticalAlign="middle" horizontalAlign="center"> 
+
+	<fx:Script>
+		<![CDATA[
+		import mx.core.FlexGlobals;
+
+		import net.adobe.nativeextension.events.LocationDataEvent;
+
+		protected function getLocationData():void {
+
+			FlexGlobals.topLevelApplication.featuresController.addEventListener(LocationDataEvent.GEOLOCATION_DONE, onLocationDataReceived);
+		}
+
+		private function onLocationDataReceived(event:LocationDataEvent) {
+
+			latitude.text = event.latituted;
+			longitude.text = event.longitude;
+		}
+		]]>
+	</fx:Script>
+
+	<s:VGroup width="100%" height="100%" gap="15" verticalAlign="middle" horizontalAlign="center">
+
 		<s:Label text="Testing geolocation features" />
+		<s:Button label="Get location data" click="getLocationData()" styleName="location"/>
 		<s:Button label="Home" click="navigator.popView()" styleName="back" />
+
+		<s:HGroup verticalAlign="middle">
+			<s:Label text="Latitude: "/>
+			<s:TextInput id="latitude" width="320" text=""/>
+		</s:HGroup>
+		<s:HGroup verticalAlign="middle">
+			<s:Label text="Longitude: "/>
+			<s:TextInput id="longitude" width="320" text=""/>
+		</s:HGroup>
 	</s:VGroup>
 </s:View>

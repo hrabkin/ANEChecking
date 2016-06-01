@@ -5,6 +5,7 @@ package net.adobe.nativeextension.events {
 import flash.events.Event;
 
 public class LocationDataEvent extends Event {
+
     public static const GEOLOCATION_DONE:String = "GEO_DONE";
 
     public function LocationDataEvent(type:String, lat:String, long:String, bubbles:Boolean = false, cancelable:Boolean = false) {
@@ -12,7 +13,6 @@ public class LocationDataEvent extends Event {
         this._lat = lat;
         this._long = long;
     }
-
     var _lat:String;
     var _long:String;
 

@@ -11,13 +11,15 @@
 		<![CDATA[
 		import mx.events.FlexEvent;
 
-		// var featuresController:NativeFeaturesController;
+		import net.adobe.nativeextension.NativeFeaturesController;
+
+		var featuresController:NativeFeaturesController;
 
 		protected function init(event:FlexEvent):void {
 
+			featuresController = new NativeFeaturesController();
 		}
 		]]>
-	</fx:Script>		
-		
-	
+	</fx:Script>
+
 </s:ViewNavigatorApplication>

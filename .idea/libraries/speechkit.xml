@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="speechkit">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AndroidNative/lib/speechkit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/AndroidNative/lib/speechkit.jar!/" />
+    </SOURCES>
+  </library>
+</component>
