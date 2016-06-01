@@ -9,14 +9,16 @@
 	
 	<fx:Script>
 		<![CDATA[
-			
-			// import net.ane.speechrecognition.SpeechRecognitionController;
-			// private var controllerSRecognition:SpeechRecognitionController;
-			import mx.events.FlexEvent;
-			
-			protected function creationCompleteHandler(event:FlexEvent):void {
-				
-			}
+		// import net.ane.speechrecognition.SpeechRecognitionController;
+		// private var controllerSRecognition:SpeechRecognitionController;
+		import mx.events.FlexEvent;
+
+		private NativeFeaturesController
+		featuresController;
+
+		protected function init(event:FlexEvent):void {
+
+		}
 		]]>
 	</fx:Script>		
 		

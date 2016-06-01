@@ -5,7 +5,7 @@
       <configuration name="FeaturesPrototyping" target-platform="Mobile" main-class="FeaturesPrototyping" output-file="FeaturesPrototyping.swf" output-folder="$MODULE_DIR$/bin-debug">
         <dependencies>
           <entries>
-            <entry library-id="e0df4d1b-6352-4c54-bb90-aae972b736a5">
+            <entry library-id="2dab4d52-24e2-4c8a-8f07-3696af2b87c9">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -19,10 +19,16 @@
         <packaging-air-desktop />
         <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/FeaturesPrototyping-app.xml" package-file-name="FeaturesPrototyping">
           <files-to-package>
-            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets/icons" path-in-package="icons" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/main.css" path-in-package="main.css" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets" path-in-package="." />
           </files-to-package>
         </packaging-android>
-        <packaging-ios use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/FeaturesPrototyping-app.xml" package-file-name="FeaturesPrototyping" />
+        <packaging-ios use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/FeaturesPrototyping-app.xml" package-file-name="FeaturesPrototyping">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/main.css" path-in-package="main.css" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/assets" path-in-package="." />
+          </files-to-package>
+        </packaging-ios>
       </configuration>
     </configurations>
     <compiler-options />
@@ -37,7 +43,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library type="flex">
-        <properties id="e0df4d1b-6352-4c54-bb90-aae972b736a5" />
+        <properties id="2dab4d52-24e2-4c8a-8f07-3696af2b87c9" />
         <CLASSES>
           <root url="file://$MODULE_DIR$/libs" />
         </CLASSES>
