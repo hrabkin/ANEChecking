@@ -12,6 +12,7 @@
 
 			FlexGlobals.topLevelApplication.featuresController.addEventListener(RecognitionEvent.RECOGNITION_INTERIM, onRecognitionInterim);
 			FlexGlobals.topLevelApplication.featuresController.addEventListener(RecognitionEvent.RECOGNITION_FINAL, onRecognitionFinal);
+			FlexGlobals.topLevelApplication.featuresController.startRecognition();
 		}
 
 		private function onRecognitionInterim(event:RecognitionEvent) {

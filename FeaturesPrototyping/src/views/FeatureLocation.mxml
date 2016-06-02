@@ -11,6 +11,7 @@
 		protected function getLocationData():void {
 
 			FlexGlobals.topLevelApplication.featuresController.addEventListener(LocationDataEvent.GEOLOCATION_DONE, onLocationDataReceived);
+			FlexGlobals.topLevelApplication.featuresController.startListeningLocation();
 		}
 
 		private function onLocationDataReceived(event:LocationDataEvent) {

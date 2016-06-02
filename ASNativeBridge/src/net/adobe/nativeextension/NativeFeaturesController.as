@@ -8,12 +8,12 @@ import net.adobe.nativeextension.events.LocationDataEvent;
 import net.adobe.nativeextension.events.RecognitionEvent;
 
 public class NativeFeaturesController extends EventDispatcher {
-		private const extensionID:String = "net.zestug.speechrecognizer";
+	private const extensionID:String = "net.zestug.androidnative";
 
 	public function NativeFeaturesController()
 		{
 			extContext = ExtensionContext.createExtensionContext(
-						 extensionID, null);
+					extensionID, "");
 			extContext.call("initialize");
 			extContext.addEventListener(StatusEvent.STATUS, onStatus);
 		}
@@ -21,20 +21,18 @@ public class NativeFeaturesController extends EventDispatcher {
 	private var extContext:ExtensionContext;
 	private var _recognizedText:String = "";
 
-		public function startRecognition():void 
-		{
-			extContext.call("startRecognition");		
-		}
+	public function startRecognition():void {
+		extContext.call("startRecognition");
+	}
 
-	public function startListeningLocation():void
-		{
+	public function startListeningLocation():void {
 			extContext.call("geoLocation");
-		}
-		
-		public function dispose():void {
+	}
+
+	public function dispose():void {
 			// stopRecognition();
-			extContext.dispose(); 
-		}
+		extContext.dispose();
+	}
 
 	private function onStatus(event:StatusEvent):void {
 

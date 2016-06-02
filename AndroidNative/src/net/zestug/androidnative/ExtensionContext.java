@@ -1,12 +1,9 @@
 package net.zestug.androidnative;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 import com.adobe.fre.FREContext;
@@ -31,12 +28,8 @@ public class ExtensionContext extends FREContext implements LocationListener {
 		if (speechRecognizer != null)
 			speechRecognizer.stopRecognition();
 
-		if (locationManager == null &&
-				(ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
-						!= PackageManager.PERMISSION_GRANTED)) {
-			return;
-		}
-		locationManager.removeUpdates(this);
+		if (locationManager != null)
+			locationManager.removeUpdates(this);
 	}
 	
 	@Override
