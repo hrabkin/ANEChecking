@@ -13,8 +13,8 @@ public class LocationDataEvent extends Event {
         this._lat = lat;
         this._long = long;
     }
-    var _lat:String;
-    var _long:String;
+    private var _lat:String;
+	private var _long:String;
 
     public function get latituted():String {
         return this._lat;

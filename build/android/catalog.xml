@@ -10,13 +10,7 @@
   </features>
   <libraries>
     <library path="library.swf">
-      <script name="_8905778326507cf6df1823d398538a8b34e6cbef28bd4735361525e0f30a8927_flash_display_Sprite" mod="1464818133577" signatureChecksum="3557586989" >
-        <def id="_8905778326507cf6df1823d398538a8b34e6cbef28bd4735361525e0f30a8927_flash_display_Sprite" /> 
-        <dep id="flash.system:Security" type="e" /> 
-        <dep id="AS3" type="n" /> 
-        <dep id="flash.display:Sprite" type="i" /> 
-      </script>
-      <script name="net/adobe/nativeextension/NativeFeaturesController" mod="1464816704000" signatureChecksum="2721684503" >
+      <script name="net/adobe/nativeextension/NativeFeaturesController" mod="1464849119000" signatureChecksum="2721684503" >
         <def id="net.adobe.nativeextension:NativeFeaturesController" /> 
         <dep id="net.adobe.nativeextension.events:LocationDataEvent" type="e" /> 
         <dep id="net.adobe.nativeextension.events:RecognitionEvent" type="e" /> 
@@ -27,7 +21,13 @@
         <dep id="AS3" type="n" /> 
         <dep id="flash.events:EventDispatcher" type="i" /> 
       </script>
-      <script name="net/adobe/nativeextension/events/LocationDataEvent" mod="1464816689000" signatureChecksum="2601152949" >
+      <script name="_7fec053befc413778463ccb048449ce0f7e85eba9fada6153124a2ff6f6b6067_flash_display_Sprite" mod="1464849470423" signatureChecksum="782859109" >
+        <def id="_7fec053befc413778463ccb048449ce0f7e85eba9fada6153124a2ff6f6b6067_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="net/adobe/nativeextension/events/LocationDataEvent" mod="1464849356000" signatureChecksum="856711602" >
         <def id="net.adobe.nativeextension.events:LocationDataEvent" /> 
         <dep id="AS3" type="n" /> 
         <dep id="flash.events:Event" type="i" /> 
@@ -38,7 +38,7 @@
         <dep id="flash.events:Event" type="i" /> 
       </script>
       <digests>
-        <digest type="SHA-256" signed="false" value="a21cafb735682e72c90c40998e95b42feaaec4a05239dc40486775103a77f5a7"   />
+        <digest type="SHA-256" signed="false" value="c2c9c898f502579aae0efef18301c0f898370e48717a0626cf9751255a5090a7"   />
       </digests>
     </library>
   </libraries>

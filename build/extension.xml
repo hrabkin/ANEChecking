@@ -1,5 +1,5 @@
 <extension xmlns="http://ns.adobe.com/air/extension/21.0">
-    <id>net.adobe.nativeextension</id>
+    <id>net.zestug.androidnative</id>
     <versionNumber>0.0.1</versionNumber>
     <platforms>
         <platform name="Android-ARM">

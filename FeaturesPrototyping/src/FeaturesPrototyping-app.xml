@@ -51,6 +51,7 @@
         <fullScreen>false</fullScreen>
         <visible>true</visible>
         <softKeyboardBehavior>none</softKeyboardBehavior>
+    <content/>
     </initialWindow>
 
 	<!-- We recommend omitting the supportedProfiles element, -->
@@ -195,6 +196,6 @@
     </iPhone>
 
 	<extensions>
-		<extensionID>net.adobe.nativeextension</extensionID>
-	</extensions>
+		<extensionID>net.zestug.androidnative</extensionID>
+    </extensions>
 </application>

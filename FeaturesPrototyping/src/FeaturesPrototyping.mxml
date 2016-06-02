@@ -10,10 +10,9 @@
 	<fx:Script>
 		<![CDATA[
 		import mx.events.FlexEvent;
-
 		import net.adobe.nativeextension.NativeFeaturesController;
 
-		var featuresController:NativeFeaturesController;
+		public var featuresController:NativeFeaturesController;
 
 		protected function init(event:FlexEvent):void {
 
