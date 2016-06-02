@@ -10,7 +10,7 @@
   </features>
   <libraries>
     <library path="library.swf">
-      <script name="net/adobe/nativeextension/NativeFeaturesController" mod="1464849119000" signatureChecksum="2721684503" >
+      <script name="net/adobe/nativeextension/NativeFeaturesController" mod="1464851125000" signatureChecksum="2721684503" >
         <def id="net.adobe.nativeextension:NativeFeaturesController" /> 
         <dep id="net.adobe.nativeextension.events:LocationDataEvent" type="e" /> 
         <dep id="net.adobe.nativeextension.events:RecognitionEvent" type="e" /> 
@@ -21,7 +21,7 @@
         <dep id="AS3" type="n" /> 
         <dep id="flash.events:EventDispatcher" type="i" /> 
       </script>
-      <script name="_7fec053befc413778463ccb048449ce0f7e85eba9fada6153124a2ff6f6b6067_flash_display_Sprite" mod="1464849470423" signatureChecksum="782859109" >
+      <script name="_7fec053befc413778463ccb048449ce0f7e85eba9fada6153124a2ff6f6b6067_flash_display_Sprite" mod="1464851506592" signatureChecksum="782859109" >
         <def id="_7fec053befc413778463ccb048449ce0f7e85eba9fada6153124a2ff6f6b6067_flash_display_Sprite" /> 
         <dep id="flash.system:Security" type="e" /> 
         <dep id="AS3" type="n" /> 
@@ -38,7 +38,7 @@
         <dep id="flash.events:Event" type="i" /> 
       </script>
       <digests>
-        <digest type="SHA-256" signed="false" value="c2c9c898f502579aae0efef18301c0f898370e48717a0626cf9751255a5090a7"   />
+        <digest type="SHA-256" signed="false" value="30d1f4d851e689638effc29f11fc8a6b1e465f50645fb6ee9057608409839745"   />
       </digests>
     </library>
   </libraries>
